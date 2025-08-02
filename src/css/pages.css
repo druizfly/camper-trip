@@ -706,6 +706,126 @@
     margin-bottom: 0;
 }
 
+/* Activities Grid */
+.activities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.activity-card {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #e9ecef;
+    border-left: 4px solid #3498db;
+}
+
+.activity-card h4 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.activity-card h5 {
+    color: #2c3e50;
+    margin: 1rem 0 0.5rem 0;
+    font-size: 1rem;
+}
+
+.activity-card p {
+    color: #666;
+    margin-bottom: 0.8rem;
+    line-height: 1.5;
+}
+
+.activity-card ul {
+    color: #666;
+    margin: 0.5rem 0 0.5rem 1rem;
+}
+
+.activity-card ul li {
+    margin-bottom: 0.3rem;
+    line-height: 1.4;
+}
+
+.activity-options {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    border: 1px solid #dee2e6;
+}
+
+/* Logistics Section */
+.logistics-section {
+    margin: 2rem 0;
+}
+
+.logistics-details {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.logistics-details h4 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 0.5rem;
+}
+
+.logistics-details ul {
+    color: #666;
+    margin: 0.5rem 0 0.5rem 1rem;
+}
+
+.logistics-details ul li {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+/* Parking and Accommodation Options */
+.parking-options,
+.accommodation-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.parking-option,
+.accommodation-option {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #e9ecef;
+    border-left: 4px solid #95a5a6;
+}
+
+.parking-option.recommended,
+.accommodation-option.recommended {
+    border-left-color: #27ae60;
+    background: #f8fff8;
+}
+
+.parking-option h5,
+.accommodation-option h5 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.parking-option p,
+.accommodation-option p {
+    color: #666;
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
 /* Notifications */
 .notification {
     position: fixed;
