@@ -11,7 +11,8 @@ pages:
   stage: deploy
   script:
     - mkdir public
-    - cp -r src/* public/
+    - cp -r src public/
+    - cp index.html public/
     - echo "Website deployed successfully"
   artifacts:
     paths:

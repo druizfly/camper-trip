@@ -116,21 +116,24 @@ A comprehensive, responsive website for planning family camping trips through Oc
 ## 📁 Project Structure
 
 ```
-src/
-├── index.html              # Landing page
-├── css/
-│   ├── styles.css          # Global styles and navigation
-│   └── pages.css           # Page-specific styles and components
-├── js/
-│   ├── main.js             # Core functionality (search, gallery, navigation)
-│   └── checklist.js        # Checklist-specific features
-├── pages/
-│   ├── getting-started.html # Preparation and documentation
-│   ├── itineraries.html    # Two detailed travel routes
-│   ├── accommodations.html # Campings and service areas
-│   ├── checklist.html      # Interactive packing checklist
-│   └── resources.html      # Emergency contacts and references
-└── images/                 # Image assets (placeholder)
+├── index.html              # Landing page (root for GitHub Pages)
+├── src/
+│   ├── css/
+│   │   ├── styles.css      # Global styles and navigation
+│   │   └── pages.css       # Page-specific styles and components
+│   ├── js/
+│   │   ├── main.js         # Core functionality (search, gallery, navigation)
+│   │   └── checklist.js    # Checklist-specific features
+│   ├── pages/
+│   │   ├── getting-started.html # Preparation and documentation
+│   │   ├── itineraries.html    # Two detailed travel routes
+│   │   ├── accommodations.html # Campings and service areas
+│   │   ├── checklist.html      # Interactive packing checklist
+│   │   └── resources.html      # Emergency contacts and references
+│   └── images/             # Image assets (placeholder)
+├── package.json
+├── .gitlab-ci.yml
+└── README.md
 ```
 
 ## 🔧 Technology Stack
@@ -138,7 +141,7 @@ src/
 - **Frontend**: Vanilla HTML5, CSS3, JavaScript (ES6+)
 - **Styling**: CSS Grid, Flexbox, Custom Properties
 - **Build**: Node.js scripts
-- **Deployment**: GitLab Pages with GitLab CI/CD
+- **Deployment**: GitLab Pages with GitLab CI/CD or GitHub Pages
 - **Search**: Client-side implementation with fuzzy matching
 - **Storage**: localStorage for checklist persistence
 
@@ -153,6 +156,16 @@ The website automatically deploys to GitLab Pages when changes are pushed to the
 2. GitLab CI/CD pipeline runs automatically
 3. Static files are built and deployed to `public/` directory
 4. Website becomes available at your GitLab Pages URL
+
+### GitHub Pages Deployment
+
+The website is now compatible with GitHub Pages with `index.html` in the root directory.
+
+**Deployment Process:**
+1. Push changes to `main` branch
+2. Go to repository Settings → Pages
+3. Select "Deploy from a branch" and choose `main` branch
+4. Website will be available at `https://yourusername.github.io/repository-name`
 
 ### Manual Deployment
 
@@ -185,7 +198,7 @@ The project includes a GitLab CI/CD configuration (`.gitlab-ci.yml`) with:
 
 1. **Update HTML pages** in `src/pages/`
 2. **Add search terms** to `searchData` array in `src/js/main.js`
-3. **Update navigation** in all HTML files if adding new pages
+3. **Update navigation** in `index.html` (root) and all page files in `src/pages/`
 4. **Test locally** with `npm run serve`
 5. **Commit and push** to deploy
 
