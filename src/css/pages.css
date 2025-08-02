@@ -1,0 +1,959 @@
+/* Page-specific styles for content pages */
+
+/* Page Layout */
+.main-content {
+    margin-top: 70px;
+    min-height: calc(100vh - 70px);
+}
+
+.page-header {
+    background: linear-gradient(135deg, #74b9ff, #0984e3);
+    color: white;
+    padding: 60px 0 40px;
+    text-align: center;
+}
+
+.page-header h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.page-subtitle {
+    font-size: 1.2rem;
+    color: #ddd;
+    margin-bottom: 2rem;
+}
+
+.print-btn {
+    margin-top: 1rem;
+}
+
+/* Content Grid Layout */
+.content-grid {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 3rem;
+    margin-top: 2rem;
+    align-items: start;
+}
+
+.sidebar {
+    position: sticky;
+    top: 90px;
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    height: fit-content;
+}
+
+.page-nav h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.page-nav ul {
+    list-style: none;
+}
+
+.page-nav ul li {
+    margin-bottom: 0.5rem;
+}
+
+.page-nav ul li a {
+    color: #666;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    display: block;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.page-nav ul li a:hover {
+    color: #3498db;
+    background: #f8f9fa;
+    padding-left: 0.5rem;
+}
+
+.main-article {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+/* Content Sections */
+.content-section {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+}
+
+.content-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.content-section h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #3498db;
+}
+
+/* Alert Boxes */
+.alert {
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    border-left: 4px solid;
+}
+
+.alert-info {
+    background: #e3f2fd;
+    border-left-color: #2196f3;
+    color: #0d47a1;
+}
+
+.alert-warning {
+    background: #fff3e0;
+    border-left-color: #ff9800;
+    color: #e65100;
+}
+
+.alert-success {
+    background: #e8f5e8;
+    border-left-color: #4caf50;
+    color: #2e7d32;
+}
+
+.alert-danger {
+    background: #ffebee;
+    border-left-color: #f44336;
+    color: #c62828;
+}
+
+/* Cards and Grid Layouts */
+.requirements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.requirement-card {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #e9ecef;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.requirement-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.req-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.requirement-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.requirement-card p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Process Steps */
+.process-steps {
+    margin: 2rem 0;
+}
+
+.step {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+}
+
+.step:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background: #3498db;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.step-content {
+    flex: 1;
+}
+
+.step-content h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.step-content p {
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.step-content ul {
+    color: #666;
+    margin-left: 1rem;
+}
+
+.step-content ul li {
+    margin-bottom: 0.3rem;
+}
+
+/* Cost Breakdown */
+.cost-breakdown {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+.cost-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3rem 0;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.cost-item:last-child {
+    border-bottom: none;
+}
+
+.cost-total {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    font-weight: bold;
+    border-top: 2px solid #3498db;
+    margin-top: 0.5rem;
+    color: #2c3e50;
+}
+
+/* Strategy Cards */
+.strategy-card {
+    background: linear-gradient(135deg, #e8f5e8, #f1f8e9);
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid #4caf50;
+    margin: 2rem 0;
+}
+
+.strategy-card h3 {
+    color: #2e7d32;
+    margin-bottom: 1rem;
+}
+
+.recommendation {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid #4caf50;
+    margin-top: 1rem;
+    color: #2e7d32;
+}
+
+/* Tips Grid */
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.tip-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #e9ecef;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tip-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.tip-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.tip-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.tip-card p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Emergency Cards */
+.emergency-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.emergency-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid #e74c3c;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.emergency-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(231, 76, 60, 0.2);
+}
+
+.emergency-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.emergency-number {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #e74c3c;
+    margin: 0.5rem 0;
+}
+
+.emergency-card h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.emergency-card p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* Resources Grid */
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.resource-link {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #e9ecef;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resource-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.resource-link h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.resource-link a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.resource-link a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+.resource-link p {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Apps Grid */
+.apps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.app-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #e9ecef;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.app-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.app-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.app-card p {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.app-badges {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.badge {
+    background: #3498db;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Phrases Grid */
+.phrases-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.phrase-category {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #e9ecef;
+}
+
+.phrase-category h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.phrase {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    background: white;
+    border-radius: 6px;
+    border-left: 3px solid #3498db;
+}
+
+.phrase:last-child {
+    margin-bottom: 0;
+}
+
+.french {
+    display: block;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 0.3rem;
+}
+
+.spanish {
+    display: block;
+    color: #666;
+    font-style: italic;
+}
+
+/* Checklist Styles */
+.checklist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.checklist-category {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #e9ecef;
+}
+
+.checklist-category h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.checklist-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.checklist-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.8rem;
+    background: white;
+    border-radius: 6px;
+    border: 1px solid #dee2e6;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.checklist-item:hover {
+    background: #f8f9fa;
+    transform: translateX(2px);
+}
+
+.checklist-item.completed {
+    background: #e8f5e8;
+    border-color: #4caf50;
+}
+
+.checklist-item.completed span {
+    text-decoration: line-through;
+    color: #666;
+}
+
+.checklist-item input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.checklist-item span {
+    flex: 1;
+    color: #2c3e50;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+/* Progress Tracker */
+#progress-tracker {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+    border: 1px solid #e9ecef;
+}
+
+#progress-tracker h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.progress-container {
+    margin-bottom: 1.5rem;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background: #e9ecef;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #3498db;
+    transition: width 0.3s ease, background-color 0.3s ease;
+    border-radius: 10px;
+    width: 0%;
+}
+
+#progress-text {
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+    margin: 0;
+}
+
+.progress-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.progress-actions .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+/* Accommodation Types */
+.accommodation-types {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.accommodation-type {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #e9ecef;
+}
+
+.accommodation-type h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.accommodation-type p {
+    color: #666;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+/* Campings Grid */
+.campings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.camping-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #e9ecef;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.camping-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.camping-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.camping-card p {
+    color: #666;
+    font-size: 0.95rem;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Route Overview */
+.route-overview {
+    background: #e3f2fd;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid #2196f3;
+    margin: 1.5rem 0;
+}
+
+.route-overview p {
+    margin: 0.5rem 0;
+    color: #0d47a1;
+}
+
+.route-overview p:last-child {
+    margin-bottom: 0;
+}
+
+/* Notifications */
+.notification {
+    position: fixed;
+    top: 90px;
+    right: 20px;
+    background: #2c3e50;
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    z-index: 1001;
+    transform: translateX(400px);
+    transition: transform 0.3s ease;
+    max-width: 300px;
+}
+
+.notification.show {
+    transform: translateX(0);
+}
+
+.notification-success {
+    background: #27ae60;
+}
+
+.notification-warning {
+    background: #f39c12;
+}
+
+.notification-danger {
+    background: #e74c3c;
+}
+
+/* Page Navigation */
+.page-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0 2rem;
+    gap: 1rem;
+}
+
+.nav-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 24px;
+    background: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+}
+
+.nav-btn.prev {
+    background: #95a5a6;
+}
+
+.nav-btn.prev:hover {
+    background: #7f8c8d;
+}
+
+/* Navigation Logo Link */
+.nav-logo a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-logo a:hover {
+    color: #3498db;
+}
+
+/* Active Navigation Link */
+.nav-link.active {
+    color: #3498db;
+    font-weight: 600;
+}
+
+/* Responsive Design for Pages */
+@media (max-width: 768px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .sidebar {
+        position: static;
+        order: 2;
+        margin-top: 2rem;
+    }
+    
+    .main-article {
+        order: 1;
+    }
+    
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .requirements-grid,
+    .tips-grid,
+    .emergency-grid,
+    .resources-grid,
+    .apps-grid,
+    .phrases-grid,
+    .checklist-grid,
+    .campings-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .step {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .step-number {
+        align-self: flex-start;
+    }
+    
+    .page-navigation {
+        flex-direction: column;
+    }
+    
+    .nav-btn {
+        text-align: center;
+    }
+    
+    .notification {
+        right: 10px;
+        left: 10px;
+        max-width: none;
+        transform: translateY(-100px);
+    }
+    
+    .notification.show {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 480px) {
+    .page-header {
+        padding: 40px 0 30px;
+    }
+    
+    .page-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .main-article {
+        padding: 1.5rem;
+    }
+    
+    .sidebar {
+        padding: 1rem;
+    }
+    
+    .content-section {
+        margin-bottom: 2rem;
+    }
+    
+    .alert {
+        padding: 1rem;
+    }
+    
+    .strategy-card {
+        padding: 1.5rem;
+    }
+    
+    .emergency-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .emergency-card {
+        padding: 1rem;
+    }
+    
+    .emergency-number {
+        font-size: 1.5rem;
+    }
+}
+
+/* Print Styles for Pages */
+@media print {
+    .sidebar,
+    .page-navigation,
+    .print-btn,
+    .progress-actions,
+    .notification {
+        display: none;
+    }
+    
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .page-header {
+        background: white;
+        color: black;
+        padding: 20px 0;
+    }
+    
+    .page-header h1,
+    .page-subtitle {
+        color: black;
+    }
+    
+    .content-section {
+        page-break-inside: avoid;
+        margin-bottom: 2rem;
+    }
+    
+    .alert {
+        border: 1px solid #ddd;
+        background: white !important;
+        color: black !important;
+    }
+    
+    .strategy-card {
+        border: 1px solid #ddd;
+        background: white !important;
+    }
+    
+    .step-number {
+        background: white !important;
+        color: black !important;
+        border: 2px solid black;
+    }
+    
+    .emergency-card,
+    .resource-link,
+    .app-card,
+    .camping-card {
+        border: 1px solid #ddd;
+        page-break-inside: avoid;
+        margin-bottom: 1rem;
+    }
+    
+    .checklist-item input[type="checkbox"] {
+        -webkit-appearance: checkbox;
+        appearance: checkbox;
+    }
+    
+    .progress-tracker {
+        display: none;
+    }
+} 
