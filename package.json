@@ -1,0 +1,26 @@
+{
+  "name": "camper-trip-website",
+  "version": "1.0.0",
+  "description": "Family camping trip website for southern France",
+  "main": "src/index.html",
+  "scripts": {
+    "build": "echo 'Building static website...'",
+    "test": "echo 'Tests not implemented yet'",
+    "serve": "npx http-server src -p 3000"
+  },
+  "keywords": [
+    "camping",
+    "france",
+    "family",
+    "travel",
+    "occitania"
+  ],
+  "author": "Development Team",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "dependencies": {
+    "fuse.js": "^7.0.0"
+  }
+} 

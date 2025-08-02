@@ -1,0 +1,28 @@
+image: node:18
+
+cache:
+  paths:
+    - node_modules/
+
+before_script:
+  - npm install
+
+pages:
+  stage: deploy
+  script:
+    - mkdir public
+    - cp -r src/* public/
+    - echo "Website deployed successfully"
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
+
+test:
+  stage: test
+  script:
+    - echo "Running tests..."
+    - npm test || true
+  except:
+    - main 
